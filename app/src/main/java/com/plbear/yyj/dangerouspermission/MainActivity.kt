@@ -9,6 +9,8 @@ import android.support.v4.content.ContextCompat
 import android.support.v7.widget.AppCompatTextView
 import android.util.Log
 import android.view.View
+import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     val TAG = "MainActivity"
@@ -16,6 +18,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        lab_test.setText("这是切换后的")
+        if (lab_test is TextView) {
+            Log.e(TAG, "lab_test is TextView")
+        }
     }
 
     fun onClick_requestPermission(v: View) {
