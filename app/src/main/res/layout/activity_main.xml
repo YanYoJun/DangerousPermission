@@ -20,4 +20,17 @@
         android:text="获取权限" />
 
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick_loadImageView"
+        android:text="使用Glide加载图片" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/watting_start" />
+
+
 </LinearLayout>
